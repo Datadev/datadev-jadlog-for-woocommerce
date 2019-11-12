@@ -1,0 +1,1 @@
+jQuery(function(a){a('input[id$="_show_delivery_time"], #datadev-jadlog_display_date').on("change",function(){var b=a('input[id$="_additional_time"]').closest("tr");a(this).is(":checked")?b.show():b.hide()}).change()});
