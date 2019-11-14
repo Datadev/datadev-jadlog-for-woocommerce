@@ -1,0 +1,321 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Datadev - Jadlog for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-14 12:10+0000\n"
+"PO-Revision-Date: 2019-11-14 12:55+0000\n"
+"Last-Translator: Fabrício Costa da Silva <skydogtk@gmail.com>\n"
+"Language-Team: Português do Brasil\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.3"
+
+#. 1: shipping method name 2: days to delivery
+#: includes/class-datadev-jadlog-orders.php:40
+#, php-format
+msgid "%1$s (delivery within %2$d working day after paid)"
+msgid_plural "%1$s (delivery within %2$d working days after paid)"
+msgstr[0] "%1$s (entrega em %2$d dia útil após o pagamento)"
+msgstr[1] "%1$s (entrega em %2$d dias úteis após o pagamento)"
+
+#. %s: method title
+#: includes/abstracts/class-datadev-jadlog-shipping.php:64
+#, php-format
+msgid "%s is a shipping method from Jadlog."
+msgstr "%s é um método de entrega da Jadlog."
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:240
+msgid "Account"
+msgstr "Conta"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:242
+msgid "Account."
+msgstr "Conta."
+
+#: includes/admin/views/html-admin-missing-dependencies.php:23
+msgid "Active WooCommerce"
+msgstr "Ativar WooCommerce"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:189
+msgid "Additional Days"
+msgstr "Dias adicionais"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:191
+msgid "Additional working days to the estimated delivery."
+msgstr "Dias úteis adicionais para a estimativa de entrega."
+
+#. Description of the plugin
+msgid "Adds Jadlog shipping methods to your WooCommerce store."
+msgstr "Adiciona os métodos de entrega da Jadlog na sua loja WooCommerce."
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:129
+msgid "Any Shipping Class"
+msgstr "Qual classe de entrega"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:256
+msgid "Authorization token"
+msgstr "Token de autorização"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:258
+msgid "Authorization token."
+msgstr "Token de autorização."
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:159
+msgid "Behavior Options"
+msgstr "Opções de comportamento"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:232
+#: includes/abstracts/class-datadev-jadlog-shipping.php:234
+msgid "CNPJ"
+msgstr "CNPJ"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:248
+msgid "Contract"
+msgstr "Contrato"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:250
+msgid "Contract."
+msgstr "Contrato."
+
+#. Author of the plugin
+msgid "Datadev"
+msgstr "Datadev"
+
+#. Name of the plugin
+#: includes/admin/views/html-admin-help-message.php:17
+#: includes/admin/views/html-admin-missing-dependencies.php:20
+msgid "Datadev - Jadlog for WooCommerce"
+msgstr "Datadev - Jadlog para WooCommerce"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:303
+msgid "Debug Log"
+msgstr "Debug Log"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:211
+msgid "Declare Value for Insurance"
+msgstr "Valor declarado para seguro"
+
+#: includes/class-datadev-jadlog-orders.php:57
+msgid "Delivery forecast"
+msgstr "Previsão de entrega"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:181
+msgid "Delivery Time"
+msgstr "Tempo de entrega"
+
+#: includes/admin/views/html-admin-missing-dependencies.php:20
+msgid "depends on the last version of WooCommerce to work!"
+msgstr "depende da última versão do WooCommerce para funcionar!"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:184
+msgid "Display the estimated delivery time in working days."
+msgstr "Exibe a estimativa de tempo de entrega em dias úteis."
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:213
+msgid "Enable declared value"
+msgstr "Ativa o valor declarado"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:305
+msgid "Enable logging"
+msgstr "Ativa o registro do log"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:148
+msgid "Enable this shipping method"
+msgstr "Ativa este método de entrega"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:146
+msgid "Enable/Disable"
+msgstr "Ativa/Desativa"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:199
+msgid ""
+"Enter an amount, e.g. 2.50, or a percentage, e.g. 5%. Leave blank to disable."
+msgstr ""
+"Informe um valor, por exemplo 2.5, ou uma porcentagem, por exemplo 5%. Deixe "
+"em branco para desativar."
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:291
+msgid "Extra Weight (kg)"
+msgstr "Peso extra (kg)"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:293
+msgid ""
+"Extra weight in kilograms to add to the package total when quoting shipping "
+"costs."
+msgstr ""
+"Peso extra em quilogramas para adicionar ao total do pacote para cotar o "
+"custo de envio."
+
+#. %s: plugin name
+#: includes/admin/views/html-admin-help-message.php:17
+#, php-format
+msgid ""
+"Help us keep the %s plugin updated and improved by rating five stars &#9733;"
+"&#9733;&#9733;&#9733;&#9733; on WordPress.org. Thank you in advance!"
+msgstr ""
+"Ajude-nos a manter o plugin %s atualizado e melhorado pela classificação de "
+"cinco estrelas &#9733;&#9733;&#9733;&#9733;&#9733; no WordPress.org. Muito "
+"obrigado!"
+
+#. URI of the plugin
+msgid "https://github.com/datadev/datadev-jadlog-for-woocommerce"
+msgstr "https://github.com/datadev/datadev-jadlog-for-woocommerce"
+
+#. Author URI of the plugin
+msgid "https://www.datadev.com.br"
+msgstr "https://www.datadev.com.br"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:174
+msgid "If necessary, select a shipping class to apply this method."
+msgstr ""
+"Se necessário, seleciona uma classe de entrega para aplicar neste método."
+
+#: includes/admin/views/html-admin-missing-dependencies.php:32
+msgid "Install WooCommerce"
+msgstr "Instalar WooCoommerce"
+
+#: includes/integrations/class-datadev-jadlog-integration.php:23
+msgid "Jadlog"
+msgstr "Jadlog"
+
+#: includes/shipping/class-datadev-jadlog-shipping-com.php:34
+msgid "Jadlog .com"
+msgstr "Jadlog .Com"
+
+#: includes/shipping/class-datadev-jadlog-shipping-cargo.php:33
+msgid "Jadlog Cargo"
+msgstr "Jadlog Cargo"
+
+#: includes/shipping/class-datadev-jadlog-shipping-corporate.php:34
+msgid "Jadlog Corporate"
+msgstr "Jadlog Corporate"
+
+#: includes/shipping/class-datadev-jadlog-shipping-economico.php:34
+msgid "Jadlog Econômico"
+msgstr "Jadlog Econômico"
+
+#: includes/shipping/class-datadev-jadlog-shipping-expresso.php:34
+msgid "Jadlog Expresso"
+msgstr "Jadlog Expresso"
+
+#: includes/shipping/class-datadev-jadlog-shipping-package.php:34
+msgid "Jadlog Package"
+msgstr "Jadlog .Package"
+
+#: includes/shipping/class-datadev-jadlog-shipping-rodoviario.php:34
+msgid "Jadlog Rodoviário"
+msgstr "Jadlog Rodoviário"
+
+#. %s: method title
+#: includes/abstracts/class-datadev-jadlog-shipping.php:308
+#, php-format
+msgid "Log %s events, such as WebServices requests."
+msgstr "Registra eventos de %s, como as requisições de webservice."
+
+#: includes/admin/views/html-admin-help-message.php:20
+msgid "Make a review"
+msgstr "Fazer uma revisão"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:270
+msgid "Minimum Height (cm)"
+msgstr "Altura mínima (cm)"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:272
+msgid "Minimum height of your shipping packages."
+msgstr "Altura mínima do seu pacote de entrega."
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:284
+msgid "Minimum Length (cm)"
+msgstr "Comprimento mínimo (cm)"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:286
+msgid "Minimum length of your shipping packages."
+msgstr "Comprimento mínimo do seu pacote de entrega."
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:266
+msgid "Minimum measure for your shipping packages."
+msgstr "Medidas mínimas para o pacote de entrega"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:277
+msgid "Minimum Width (cm)"
+msgstr "Largura mínima (cm)"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:279
+msgid "Minimum width of your shipping packages."
+msgstr "Largura mínima do seu pacote de entrega."
+
+#. %s: method title
+#: includes/admin/views/html-admin-shipping-method-settings.php:20
+#, php-format
+msgid "More about %s."
+msgstr "Mais sobre %s."
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:130
+msgid "No Shipping Class"
+msgstr "Sem classe de entrega"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:205
+msgid "Optional Services"
+msgstr "Serviços opcionais"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:164
+msgid "Origin Postcode"
+msgstr "CEP de origem"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:264
+msgid "Package Standard"
+msgstr "Pacote padrão"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:224
+msgid "Service Code"
+msgstr "Código de Serviço"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:226
+msgid "Service code, use this for custom codes."
+msgstr "Código de serviço, use para códigos personalizados"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:219
+msgid "Service Options"
+msgstr "Opções de serviço"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:172
+msgid "Shipping Class"
+msgstr "Classe de entrega"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:298
+msgid "Testing"
+msgstr "Teste"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:166
+msgid "The postcode of the location your packages are delivered from."
+msgstr "O CEP do local onde a sua encomenda será entregue"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:214
+msgid ""
+"This controls if the price of the package must be declared for insurance "
+"purposes."
+msgstr ""
+"Contra se o preço da encomenda deverá ser declarado para propósitos de "
+"seguro."
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:154
+msgid "This controls the title which the user sees during checkout."
+msgstr "Controla o título que o usuário vê durante o checkout."
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:152
+msgid "Title"
+msgstr "Título"
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:207
+msgid ""
+"Use these options to add the value of each service provided by the Jadlog."
+msgstr ""
+"Use estas opções para adicionar o valor de cada serviço provido pela Jadlog."
+
+#: includes/abstracts/class-datadev-jadlog-shipping.php:103
+msgid "View logs."
+msgstr "Ver registros de log."
