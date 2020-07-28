@@ -23,6 +23,13 @@ class Datadev_Jadlog_Shipping_Com extends Datadev_Jadlog_Shipping {
      * @var string
      */
     protected $code = '9';
+    
+    /**
+     * Service modality type.
+     *
+     * @var string
+     */
+    protected $modal = 'AEREO';
 
     /**
      * Initialize Jadlog Com.

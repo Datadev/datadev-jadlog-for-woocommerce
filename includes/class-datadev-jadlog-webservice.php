@@ -43,6 +43,13 @@ class Datadev_Jadlog_Webservice {
      * @var string|array
      */
     protected $modality = '';
+    
+    /**
+     * Jadlog modal type
+     *
+     * @var string
+     */
+    protected $modal_type = '';
 
     /**
      * WooCommerce package containing the products.
@@ -194,6 +201,15 @@ class Datadev_Jadlog_Webservice {
             $this->modality = $modality;
         }
     }
+    
+    /**
+     * Set the modal type
+     *
+     * @param string $modal_type modal type.
+     */
+    public function set_modal_type($modal_type = '') {
+        $this->modal_type = $modal_type;
+    }
 
     /**
      * Set shipping package.
@@ -210,7 +226,7 @@ class Datadev_Jadlog_Webservice {
             $this->set_height($data['height']);
             $this->set_width($data['width']);
             $this->set_length($data['length']);
-            $this->set_weight($data['weight']);
+            $this->set_weight($this->get_cubic_weight($this->get_height(), $this->get_width(), $this->get_length()));
         }
 
         if ('yes' === $this->debug) {
@@ -224,6 +240,34 @@ class Datadev_Jadlog_Webservice {
             }
 
             $this->log->add($this->id, 'Weight and cubage of the order: ' . print_r($data, true));
+        }
+    }
+    
+    /**
+     * Calculates cubic weight according to modal type
+     *
+     * @param float $height Package height.
+     * @param float $width Package width.
+     * @param float $length Package length.
+     */
+    public function get_cubic_weight($height = 0, $width = 0, $length = 0) {       
+        $modal_divider = 1;
+        if ($this->modal_type === 'AEREO') {
+            $modal_divider = 6000;
+        } elseif ($this->modal_type === 'RODO') {
+            $modal_divider = 3333;
+        }
+        
+        if ('yes' === $this->debug) {
+            $this->log->add($this->id, 'Modal type: ' . $this->modal_type);
+            $this->log->add($this->id, 'Cálculo: ' . "$height * $width * $length) / $modal_divider");
+            $this->log->add($this->id, 'Cálculo: (' . ($height * $width * $length) . ') / ' . $modal_divider);
+        }
+        
+        if ($modal_divider === 1) {
+            return;
+        } else {
+            return ($height * $width * $length) / $modal_divider;
         }
     }
 

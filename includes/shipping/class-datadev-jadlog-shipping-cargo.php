@@ -22,6 +22,13 @@ class Datadev_Jadlog_Shipping_Cargo extends Datadev_Jadlog_Shipping {
      * @var string
      */
     protected $code = '12';
+    
+    /**
+     * Service modality type.
+     *
+     * @var string
+     */
+    protected $modal = 'AEREO';
 
     /**
      * Initialize Jadlog Cargo.

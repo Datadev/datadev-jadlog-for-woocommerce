@@ -24,6 +24,13 @@ abstract class Datadev_Jadlog_Shipping extends WC_Shipping_Method {
      * @var string
      */
     protected $code = '';
+    
+    /**
+     * Service modality type.
+     *
+     * @var string
+     */
+    protected $modal = '';
 
     /**
      * CNPJ.
@@ -352,6 +359,15 @@ abstract class Datadev_Jadlog_Shipping extends WC_Shipping_Method {
 
         return apply_filters('datadev_jadlog_shipping_method_code', $code, $this->id, $this->instance_id);
     }
+    
+    /**
+     * Get Jadlog modality type.
+     *
+     * @return string
+     */
+    public function get_modal() {
+        return apply_filters('datadev_jadlog_shipping_method_modal', $this->modal, $this->id, $this->instance_id);
+    }
 
     /**
      * Get CNPJ.
@@ -435,6 +451,7 @@ abstract class Datadev_Jadlog_Shipping extends WC_Shipping_Method {
         $api = new Datadev_Jadlog_Webservice($this->id, $this->instance_id);
         $api->set_debug($this->debug);
         $api->set_modality($this->get_code());
+        $api->set_modal_type($this->get_modal());
         $api->set_package($package);
         $api->set_origin_postcode($this->origin_postcode);
         $api->set_destination_postcode($package['destination']['postcode']);
