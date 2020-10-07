@@ -246,28 +246,33 @@ class Datadev_Jadlog_Webservice {
     /**
      * Calculates cubic weight according to modal type
      *
-     * @param float $height Package height.
-     * @param float $width Package width.
-     * @param float $length Package length.
+     * @param float $pheight Package height.
+     * @param float $pwidth Package width.
+     * @param float $plength Package length.
      */
-    public function get_cubic_weight($height = 0, $width = 0, $length = 0) {       
+    public function get_cubic_weight($pheight = 0, $pwidth = 0, $plength = 0) {
+        $pheight = str_replace(',', '.', $pheight);
+        $pwidth = str_replace(',', '.', $pwidth);
+        $plength = str_replace(',', '.', $plength);
         $modal_divider = 1;
         if ($this->modal_type === 'AEREO') {
             $modal_divider = 6000;
         } elseif ($this->modal_type === 'RODO') {
             $modal_divider = 3333;
         }
-        
+                
         if ('yes' === $this->debug) {
-            $this->log->add($this->id, 'Modal type: ' . $this->modal_type);
-            $this->log->add($this->id, 'Cálculo: ' . "$height * $width * $length) / $modal_divider");
-            $this->log->add($this->id, 'Cálculo: (' . ($height * $width * $length) . ') / ' . $modal_divider);
+            $this->log->add($this->id, 'height: ' .$pheight . ' width: ' . $pwidth . ' length: ' . $plength );
+            $this->log->add($this->id, 'Modal type: ' . $this->modal_type . ' (Modal divider: ' . $modal_divider . ')');
+            $this->log->add($this->id, 'Calculation: ' . "$pheight * $pwidth * $plength) / $modal_divider");
+            $this->log->add($this->id, 'Calculation: ' . ($pheight * $pwidth * $plength) . ' / ' . $modal_divider);
+            $this->log->add($this->id, 'Calculation: ' . (($pheight * $pwidth * $plength)/$modal_divider));
         }
         
         if ($modal_divider === 1) {
             return;
         } else {
-            return ($height * $width * $length) / $modal_divider;
+            return ($pheight * $pwidth * $plength) / $modal_divider;
         }
     }
 

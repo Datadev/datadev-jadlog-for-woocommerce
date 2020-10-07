@@ -1,10 +1,10 @@
 === Datadev - Jadlog for WooCommerce ===
-Contributors: skydogtk
+Contributors: datadev, skydogtk
 Tags: shipping, delivery, woocommerce, jadlog
-Requires at least: 5.2
-Tested up to: 5.2
-Stable tag: 1.0.0
-Requires PHP: 5.6
+Requires at least: 5.5.1
+Tested up to: 5.5.1
+Stable tag: 1.0.1
+Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,7 +77,7 @@ Este plugin esta licenciado como GPL.
 
 = O que eu preciso para utilizar este plugin? =
 
-* WooCommerce 3.8 ou posterior.
+* WooCommerce 4.5.2 ou posterior.
 * [SimpleXML](http://php.net/manual/pt_BR/book.simplexml.php) ativado no PHP (note que já é ativado por padrão no PHP 5).
 * Adicionar peso e dimensões nos produtos que pretende entregar.
 
@@ -162,6 +162,10 @@ Em caso de dúvidas, basta abrir um tópico no [fórum de suporte do plugin](htt
 - Em breve
 
 == Changelog ==
+
+= 1.0.1 - 2020/10/07 = 
+
+- Correção no cálculo do peso
 
 = 1.0.0 - 2019/11/12 =
 

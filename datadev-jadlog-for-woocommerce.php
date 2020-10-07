@@ -5,12 +5,12 @@ Plugin URI:           https://github.com/datadev/datadev-jadlog-for-woocommerce
 Description:          Adds Jadlog shipping methods to your WooCommerce store.
 Author:               Datadev
 Author URI:           https://www.datadev.com.br
-Version:              1.0.0
+Version:              1.0.1
 License:              GPLv2 or later
 Text Domain:          datadev-jadlog-for-woocommerce
 Domain Path:          /languages
-WC requires at least: 3.8.0
-WC tested up to:      3.8.0
+WC requires at least: 4.5.2
+WC tested up to:      4.5.2
 
 Datadev - Jadlog for WooCommerce is free software: you can
 redistribute it and/or modify it under the terms of the
@@ -31,7 +31,7 @@ along with Datadev - Jadlog for WooCommerce. If not, see
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'DATADEV_JADLOG_VERSION', '1.0.0' );
+define( 'DATADEV_JADLOG_VERSION', '1.0.1' );
 define( 'DATADEV_JADLOG_PLUGIN_FILE', __FILE__ );
 
 if ( ! class_exists( 'Datadev_Jadlog' ) ) {
