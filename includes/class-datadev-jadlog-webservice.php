@@ -591,6 +591,7 @@ class Datadev_Jadlog_Webservice {
         $url = $this->get_webservice_url();
 
         if ('yes' === $this->debug) {
+            $this->log->add($this->id, 'Datadev - Jadlog for WooCommerce: ' . DATADEV_JADLOG_VERSION);
             $this->log->add($this->id, 'Requesting Jadlog WebServices: ' . $url);
             $this->log->add($this->id, 'Payload: ' . print_r($payload, true));
         }
